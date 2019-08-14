@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>chat window</title>
+  <script src="chat.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/chat.css">
+
+</head>
+
+<body>
+  <div id="banner">Chat</div>
+  <span id="back-button" onclick="window.location.assign('index.html')">&lt;</span>
+
+  <!-- OLD STUFF -->
+  <!--
+  <div id="messages-old">
+    <div class="message-old"><img class="my-ppic-old" src="questionmark.jpg"><div class="my-username-old">ANDREWPengwo</div><img class="my-img-content-old" src="idk"></div>
+    <div class="message-old"><img class="my-ppic-old" src="questionmark.jpg"><div class="my-username-old">ANDREWPENG</div><div class="my-content-old">sadfsdfa</div></div>
+    <div class="message-old"><img class="ppic-old" src="http://i.imgur.com/Tj5DGiO.jpg"><div class="username-old">Kevin Hsu</div><div class="content-old">Hello World!</div></div>
+  </div>
+  -->
+  <!--NEW-->
+  <div style="padding: 60px 0 60px 0;">
+    <table id="message-table" class="arial">
+      <tbody id="message-table-body">
+        <!-- <tr>
+          <td class = "time-td" colspan="3">
+            <div class="timestamp">
+            </div>
+            <script>var d = new Date();
+              document.getElementsByClassName("timestamp")[0].innerHTML = formatDate(d);</script>
+          </td>
+        </tr>
+        <tr class="message-row">
+          <td class="col1">
+            <img class="ppic" src="questionmark.jpg">
+          </td>
+          <td class="col2">
+            <div class="username-left">The best person in the world.</div>
+            <div class="content-left">Hello my name is The best person in the world k.</div>
+          </td>
+          <td class="col3"></td>
+        </tr> -->
+      </tbody>
+    </table>
+  </div>
+  <!--<div id="bottom">
+    <!--<input id="attach-input" type="file" onchange="loadImage(event)">+
+      
+    <!--<span id="attach-button" onclick=" addIncomingMessage('hi wow');">+</span>
+    <span id="attach-button" onclick="document.getElementById('attach-file-input').click();">+</span>
+    
+
+    <input id="text-input" type="text" name="message">
+    <script>setupEnter();</script>
+    <span id="send-button" onclick="var msg = document.getElementById('text-input').value; if(msg!=''){sendMessage(); addIncomingMessage(msg)};">Send</span>
+  </div>-->
+  <table id="bottom">
+    <tbody>
+      <tr>
+        <td id="bc1"><div id="attach-button" onclick="document.getElementById('attach-file-input').click();">+</div></td>
+        <td id="bc2"><textarea id="text-input" ></textarea>
+        <td id="bc3"><div id="send-button" onclick="clickSend();">Send</div></td>
+      </tr>
+    </tbody>
+  </table>
+  <script>
+  
+  //setupEnter();
+  loadLocalStorageIntoPage();
+
+  </script>
+
+
+
+
+  <!--HIDDEN INPUTs-->
+  <input type='file' id="myFile" onchange="loadJSONfileAsChat(event)">
+  <input type='file' id="attach-file-input" onchange="var file = attachFile(event); addIncomingAttachment(file);">
+
+</body>
+
+</html>

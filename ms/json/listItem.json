@@ -1,0 +1,46 @@
+{
+    "users": [
+        {
+            "username": "Kevin Hsu",
+            "content": "Hello World!",
+            "img": "http://i.imgur.com/Tj5DGiO.jpg",
+            "time": "11:58 AM 6/24/2018",
+            "icon": "fa fa-bell-slash-o"
+        },
+        {
+            "username": "Kevin Hsu",
+            "content": "Hello World!",
+            "img": "http://i.imgur.com/Tj5DGiO.jpg",
+            "time": "11:58 AM 6/24/2018",
+            "icon": "fa fa-bell-slash-o"
+        },
+        {
+            "username": "Kevin Hsu",
+            "content": "Hello World!",
+            "img": "http://i.imgur.com/Tj5DGiO.jpg",
+            "time": "11:58 AM 6/24/2018",
+            "icon": "fa fa-bell-slash-o"
+        },
+        {
+            "username": "Kevin Hsu",
+            "content": "Hello World!",
+            "img": "http://i.imgur.com/Tj5DGiO.jpg",
+            "time": "11:58 AM 6/24/2018",
+            "icon": "fa fa-bell-slash-o"
+        },
+        {
+            "username": "Kevin Hsu",
+            "content": "Hello World!",
+            "img": "http://i.imgur.com/Tj5DGiO.jpg",
+            "time": "11:58 AM 6/24/2018",
+            "icon": "fa fa-bell-slash-o"
+        },
+        {
+            "username": "Kevin Hsu",
+            "content": "Hello World!",
+            "img": "http://i.imgur.com/Tj5DGiO.jpg",
+            "time": "11:58 AM 6/24/2018",
+            "icon": "fa fa-bell-slash-o"
+        }
+    ]
+}

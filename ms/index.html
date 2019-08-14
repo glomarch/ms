@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>worlds best chat app</title>
+  <script src="main.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  
+
+</head>
+
+<body>
+  <table id="banner-table"> 
+    <tbody>
+      <tr>
+        <td>
+          <div id="title">WeChet!</div>
+        </td>
+        <td style="width:50px;"><i class="fa fa-search" id='search-btn'></i></td>
+        <td style="width:50px;"><div id='add-btn'>+</div></td>
+      </tr>
+    </tbody> </table>
+  <!--
+  <table>
+    <tbody>
+      <tr>
+        <td id="connect-btn" onclick="connect()">Connect</td>
+        <td id="disconnect-btn" onclick="disconnect()">Disconnect</td>
+      </tr>
+    </tbody>
+  </table>
+  <div id="addButton" onclick="addElement()">ADD</div>
+  -->
+  <div id="under-banner"></div>
+  <table id="my-table">
+    <tbody id="my-table-body">
+      <!-- <tr class="my-row" onclick="window.location.assign('chat.html')">
+        <td class="col1">
+          <img class="ppic" src="questionmark.jpg">
+        </td>
+        <td class="col2">
+          <div class="username">WOW</div>
+          <br>
+          <div class="content">TEST</div>
+        </td>
+        <td class="col3">
+          <div class="timestamp">11:58 AM 6/24/2018</div>
+          <i class="fa fa-bell-slash-o status-icon"></i>
+        </td>
+      </tr> -->
+
+    </tbody>
+
+  </table>
+  <table id="bottom-table">
+    <tbody>
+      <tr id="bottom-row">
+        <td id="chat-tab" onclick="gotoTab('chat-tab')"><i class="b-icon fa fa-comments"></i><br>Chat</td>
+        <td id="contacts-tab"onclick="gotoTab('contacts-tab')"><i class="b-icon fa fa-users"></i><br>Contacts</td>
+        <td id="explore-tab"onclick="gotoTab('explore-tab')"><i class="b-icon fa fa-compass"></i><br>EXPLORE</td>
+        <td id="me-tab"onclick="gotoTab('me-tab')"><i class="b-icon fa fa-user-circle-o"></i><br>Me</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script>
+
+    addElement("img/flowerwo.jpeg",'Pohead Peng', "You r a pohead Wo!", new Date());
+    addElement("img/cool.jpg",'ANDREW wo', "You r a pohead Wo!", new Date(2018,6,18,12,5,5,5));
+    var d = new Date();
+    d.setTime(d.getTime()-86400*1000+1);
+    addElement("img/unknown.jpg",'Charlie Pigu', "You r a pohead Wonnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnnn!", d);
+    addElement("img/unknown.jpg",'Pohead Peng111111111111111111111111111', "You r a pohead Wo!", new Date(2018,5,5,5,5,5,5));
+    for(var i = 0; i < 20; i++)
+      addElement("img/unknown.jpg",'WOW! aaaaaaaaaaaaaaa a a a a a', "asdfasdfasdfas", new Date(2018,1,1,1,1,1,1));    
+
+    
+    </script>
+
+  <input type='file' id="myFile" onchange="loadJSONfile(event)">
+  <br>
+  <div id='output'>
+  </div>
+
+  <!--old list
+  <ul id="myList">
+    <li onclick="window.location.assign('chat.html')">
+      CHARLIEPENG
+      <br>content
+    </li>
+    <li onclick="window.open('http://www.google.com/', '_blank')">CHARLIEPENG1</li>
+    <li onclick="window.location.assign('http://www.google.com/')">CHARLIEPENG2</li>
+    <li onclick="window.location.href='http://www.google.com/'">CHARLIEPENG3</li>
+  </ul>
+-->
+
+
+</body>
+
+</html>
